@@ -60,6 +60,6 @@ class Project2Server(http.server.BaseHTTPRequestHandler):
 
 if __name__ == "__main__":
     PORT = 3280
-    server = http.server.HTTPServer(('160.10.208.35', PORT), Project2Server)
+    server = http.server.HTTPServer(('', PORT), Project2Server)
     print("Project 2 - Webserver running on port {}; Type <Ctrl-C> to stop server.".format(PORT))
     server.serve_forever()
